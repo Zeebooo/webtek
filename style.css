@@ -39,6 +39,13 @@ footer{
 	
 }
 
+.footer_container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 10vw;
+}
+
 .logo_footer{
 	width: 100%;
 	display: flex;
@@ -51,10 +58,5 @@ footer{
 }
 
 .footer_textbox{
-	width: 33vw;
 	text-align: center;
-}
-
-.footer_container {
-	display: flex;
 }
