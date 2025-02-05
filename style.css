@@ -1,8 +1,18 @@
+
+/* BODY AND GENERAL CODE */
+
 body{
 	margin: 0px; /*Tar bort den vita bordern runt banner och footer*/
 	background: linear-gradient(to bottom, #899BC6, #515B74);
 	background-attachment: fixed;
 }
+
+a, a:visited, a:hover, a:active {
+    color: #F2B202;
+    text-decoration: none; /* Om du vill ta bort understrykning */
+}
+
+/* NAV-BAR RELATED CODE */
 
 nav{
 	background: linear-gradient(to right,#021C2D, #085B93);
@@ -28,6 +38,8 @@ nav{
 	
 }
 
+/* FOOTER RELATED CODE */
+
 footer{
 	background-color:#085B93;
 	position:static;
@@ -42,6 +54,7 @@ footer{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	font-family: 'Baloo', sans-serif;
 }
 
 .logo_footer{
@@ -58,4 +71,5 @@ footer{
 .footer_textbox{
 	text-align: center;
 	margin: 0 5vw 0 5vw;
+	font-family: 'Baloo2', sans-serif;
 }
