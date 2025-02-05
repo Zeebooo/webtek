@@ -56,6 +56,14 @@ nav{
 	font-weight: bold;
 }
 
+.red_fade{
+	background:linear-gradient(to right,#DA3333,#741B1B);
+}
+
+.green_fade{
+	background:linear-gradient(to right,#1BBE39,#1A892E);
+}
+
 /* FOOTER RELATED CODE */
 
 footer{
@@ -99,36 +107,46 @@ footer{
 	margin: 0 0 5vw 0;
 }
 
+.footer_textbox a {
+	color: white;
+}
+
+.footer_textbox a:hover {
+	color: #F2B202;
+}
+
 
 /* MENY RELATED CODE */
 
 .page_title_container{
 	width: 100%;
 	display: flex;
-	margin-top: 12vw;
+	margin: 12vw 0 5vw 0;
 	align-items: center;
 }
 
 .page_title_container img{
 	margin: 0 auto;
+	width: 35vw;
+	height: 12vw;
 }
 
 .meny_container{
 	background-color: #484F61;
 	margin: 0 6vw 0 6vw;
-	padding-top: 1vh;
-	height: 100vw;
+	height: auto;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 2vw;
 }
 
 .meny_title_container {
 	padding-left: 2vw;
 	margin: 0 auto;
+	margin-top: 1vw;
 	width: 85vw; 
     height: 3vw; 
-    background:linear-gradient(to right,#DA3333,#741B1B);
     border-radius: 20px;
     text-align: center; 
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -149,6 +167,7 @@ footer{
 
 .meny_title_container_content h3{
 	font-size: 1.5vw;
+	text-shadow: 1px 1px 2px black;
 }
 
 .meny_options_container{
@@ -161,13 +180,19 @@ footer{
 	display: flex;
 	gap: 2vw;
 	font-size: 1.5vw;
+	text-shadow: 1px 1px 2px black;
+
+}
+
+.price_textbox{
+	text-shadow: 1px 1px 2px black;
+	font-size: 1.5vw;
 }
 
 .meny_divider {
 	margin: 0 1vw 0 1vw;
 	width: 86vw; 
     height: 1vw;
-    background:linear-gradient(to right,#DA3333,#741B1B);
     border-radius: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
