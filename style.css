@@ -12,6 +12,16 @@ a, a:visited, a:hover, a:active {
 	color: #F2B202;
 }
 
+li{
+	list-style: none;
+}
+
+ul{
+	justify-content: center;
+	padding:0;
+	margin: 0 0 5vw 0;
+}
+
 
 /* NAV-BAR RELATED CODE */
 
@@ -101,10 +111,6 @@ footer{
 
 .footer_textbox h3 {
 	margin: 5vw 0 0 0;
-}
-
-.footer_textbox p {
-	margin: 0 0 5vw 0;
 }
 
 .footer_textbox a {
