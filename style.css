@@ -5,11 +5,12 @@ body{
 	margin: 0px; /*Tar bort den vita bordern runt banner och footer*/
 	background: linear-gradient(to bottom, #899BC6, #515B74);
 	background-attachment: fixed;
+	font-family: 'Baloo', sans-serif;
 }
 
 a, a:visited, a:hover, a:active {
     color: #F2B202;
-    text-decoration: none; /* Om du vill ta bort understrykning */
+    text-decoration: none;
 }
 
 
@@ -35,8 +36,6 @@ nav{
 	display: flex;
 	color: #F2B202;
 	gap: 10px;
-	font-family: 'Baloo', sans-serif;
-	
 }
 
 
@@ -49,6 +48,7 @@ footer{
 	width:100%;
 	z-index: 1000;
 	padding: 0;
+	margin-top: 3vw;
 	
 }
 
@@ -56,7 +56,6 @@ footer{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	font-family: 'Baloo', sans-serif;
 }
 
 .logo_footer{
@@ -73,23 +72,64 @@ footer{
 .footer_textbox{
 	text-align: center;
 	margin: 0 5vw 0 5vw;
-	font-family: 'Baloo2', sans-serif;
+	font-family: 'Baloo 2', sans-serif;
+}
+
+.footer_textbox h3 {
+	margin: 5vw 0 0 0;
+}
+
+.footer_textbox p {
+	margin: 0 0 5vw 0;
 }
 
 
 /* MENY RELATED CODE */
 
 .page_title_container{
-	margin: 15vw 10vw 15vw 10vw;
+	width: 100%;
+	display: flex;
+	margin-top: 12vw;
+	align-items: center;
+}
+
+.page_title_container img{
+	margin: 0 auto;
+}
+
+.meny_container{
+	background-color: #484F61;
+	margin: 0 6vw 0 6vw;
+	padding-top: 1vh;
+	height: 100vw;
+	border-radius: 5px;
 }
 
 .meny_title_container {
-	margin-top: 15vw;
-    width: 80vw; 
-    height: 5vw; 
-    background-color: lightblue; 
+	padding-left: 2vw;
+	color: #F2B202;
+	margin: 0 auto;
+	width: 85vw; 
+    height: 3vw; 
+    background:linear-gradient(to right,#DA3333,#741B1B);
     border-radius: 20px;
-    padding: 20px; 
     text-align: center; 
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.meny_title_container_content{
+	display: flex;
+	height: 3vw;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.meny_title_container_content h3{
+	height: 1.5vw;
+	font-size: 1.5vw;
+}
+
+.meny_title_container_content img{
+	height: 3vw;
 }
