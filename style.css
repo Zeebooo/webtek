@@ -242,15 +242,16 @@ footer{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	max-width: 100%;
-	padding: 3vw 3vw 3vw 3vw;
-	margin: 0 3vw 0 3vw;
-	background-color: white;
+	max-width: 75%;
+	padding: 10px 10px 10px 10px;
+	margin: 0 auto;
+	background: linear-gradient(to bottom, #FFFFFF, #999999);
 	gap: 2vw;
+	border-radius: 1vw;
 }
 
 .pictures_container img{
-	width: 480px;
+	max-width: 480px;
 	height: auto;
-	border-radius: 5vw;
+	border-radius: 20px;
 }
