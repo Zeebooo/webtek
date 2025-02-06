@@ -7,9 +7,14 @@ body{
 	background-attachment: fixed;
 }
 
-a, a:visited, a:hover, a:active {
+a, a:visited, a:active {
     text-decoration: none;
 	color: #F2B202;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #BF8E06;
 }
 
 li{
@@ -50,15 +55,6 @@ ul{
 	background:linear-gradient(to right,#1BBE39,#1A892E);
 }
 
-.text_size_container{
-	background-color: green;
-	position: fixed;
-	border-radius: 15%;
-	max-width: 10%;
-	margin: 5vw 0 5vw 0;
-	top: 0;
-}
-
 /* NAV-BAR RELATED CODE */
 
 nav{
@@ -79,6 +75,36 @@ nav{
 	padding-right: 3vw;
 	display: flex;
 	gap: 10px;
+}
+
+.text_size_container{
+	background-color: #D9D9D9;
+	position: fixed;
+	height: auto;
+	border-radius: 5%;
+	margin: 0vw 0 5vw 0.1vw;
+	width: auto;
+	display: flex;
+	gap: 0.3vw;
+	padding-left: 0.2vw;
+	border: black;
+	border-style: solid;
+	border-width: 0.1vw;
+}
+
+.text_size_container p {
+	margin: 0.25vw auto;
+	text-align: center;
+}
+
+.button_container{
+	display: flex;
+}
+
+.button_container button{
+	background-color: #D9D9D9;
+	border-width: 0 0 0 0.1vw;
+	height: auto;
 }
 
 /* FOOTER RELATED CODE */
@@ -107,13 +133,12 @@ footer{
 }
 
 .logo_footer img {
-	padding-right: 2vw;
 	margin: 0 auto;
 }
 
 .footer_textbox{
 	text-align: center;
-	margin: 0 5vw 0 5vw;
+	margin: 0 auto;
 }
 
 .footer_textbox h3 {
@@ -135,7 +160,6 @@ footer{
 	width: 100%;
 	display: flex;
 	margin: 12vw 0 5vw 0;
-	align-items: center;
 }
 
 .page_title_container img{
@@ -209,4 +233,24 @@ footer{
     height: 1vw;
     border-radius: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* BILDGALLERI RELATED CODE */
+
+.pictures_container_background{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+	padding: 3vw 3vw 3vw 3vw;
+	margin: 0 3vw 0 3vw;
+	background-color: white;
+	gap: 2vw;
+}
+
+.pictures_container img{
+	width: 480px;
+	height: auto;
+	border-radius: 5vw;
 }
