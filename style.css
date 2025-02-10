@@ -1,6 +1,5 @@
 
 /* BODY AND GENERAL CODE */
-
 body{
 	margin: 0px; /*Tar bort den vita bordern runt banner och footer*/
 	background: linear-gradient(to bottom, #899BC6, #515B74);
@@ -28,7 +27,6 @@ ul{
 }
 
 input::placeholder{
-	top: 7px;
 	position: absolute;
 }
 
@@ -431,3 +429,86 @@ footer{
 
 
 /* KONTAKTA OSS RELATED CODE */
+
+.form_container{
+	background-color: #484F61;
+	max-width: 50%;
+	margin: 150px auto;
+	height: auto;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	padding:0 19.2px 15px 19.2px;
+}
+
+.form_info_container{
+	text-align: center;
+}
+
+.form_info_container p{
+	color: white;
+	font-family: 'Baloo2', sans-serif;
+	text-shadow: 1px 1px 2px black;
+}
+
+.form_section_container{
+	width: 100%;
+}
+
+.form_section_container h5{
+	margin-bottom: 0;
+	color: #F2B202;
+	font-family: 'Baloo2', sans-serif;
+	text-shadow: 1px 1px 2px black;
+}
+
+.form_section_container input {
+	border-radius: 5px;
+	border: none;
+	height: 20px;
+	padding: 15px 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.form_section_container textarea {
+	resize: none;
+	border-radius: 5px;
+	border: none;
+	height: 65px;
+	padding: 5px 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.checkbox_container {
+	display: flex;
+	gap: 5px;
+}
+
+.checkbox_container input {
+	margin-left: 0;
+	transition: color 0.4s linear;
+
+}
+
+.submit_form_container{
+	display: flex;
+}
+
+.submit_form_container input{
+	margin: 0 auto;
+	border-radius: 20px;
+	border: none;
+	width: 125px;
+	height: 50px;
+	cursor: pointer;
+	transition-duration: 0.5s;
+	font-size: 20pt;
+}
+
+.submit_form_container input:hover{
+	background-color: green;
+	color: white;
+	transition-duration: 0.5s;
+}
