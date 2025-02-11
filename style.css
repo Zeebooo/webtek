@@ -1,5 +1,10 @@
 
 /* BODY AND GENERAL CODE */
+html {
+	scroll-behavior: smooth;
+}
+
+
 body{
 	margin: 0px; /*Tar bort den vita bordern runt banner och footer*/
 	background: linear-gradient(to bottom, #899BC6, #515B74);
@@ -310,7 +315,7 @@ footer{
 .lunch_container{
 	background-color: #484F61;
 	margin: 100px auto 100px auto;
-	max-width: 90%;
+	max-width: 65%;
 	gap: 50px 45px;
 	justify-content: center;
 	height: auto;
@@ -319,16 +324,22 @@ footer{
 	flex-wrap: wrap;
 	padding: 25px 25px 25px 25px;
 	overflow: hidden;
+	z-index: 1000;
+}
+
+.lunch_ img {
+	top: 0;
+	margin: 0;
 }
 
 .video_container{
-	width: 40%;
+	width: 35%;
 	height: auto;
 }
 .video_container video{
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 .lunch_container iframe{
@@ -340,7 +351,7 @@ footer{
 	width: 55%;
 	border-radius: 10px;
 	padding: 15px 15px 15px 15px;
-	font-size: 30pt;
+	font-size: 16pt;
 	text-align: center;
 }
 
@@ -511,4 +522,80 @@ footer{
 	background-color: green;
 	color: white;
 	transition-duration: 0.5s;
+}
+
+
+/* INDEX RELATED CODE */
+
+.top_background_container{
+	margin-top:0;
+	width: 100%;
+	position: relative;
+	height: 500px;
+	opacity: 75%;
+	background-image: url("/img/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.image_container {
+	position: absolute;
+	top: 100px;
+	right: 0;
+	left: 50%;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-right: 15px;
+	font-size: 16pt;
+}
+
+.image_container img {
+	width: 360px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.home_meny-container{
+	margin-top: 0;
+	background-color: green;
+}
+
+.home_meny_container{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.pizza_container{
+	background-image: url("/img/pizza.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: right;
+	height: 500px;
+	display: flex;
+	align-items: center;
+
+}
+
+.pizza_text_container{
+	margin: 0 auto;
+	background-color: #484f61af;
+	width: 75%;
+	height: auto;
+	text-align: center;
+}
+
+.vegetarisk_container{
+	background-image: url("/img/vegetarisk\ pizza.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
