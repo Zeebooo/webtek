@@ -531,7 +531,7 @@ footer{
 	margin-top:0;
 	width: 100%;
 	position: relative;
-	height: 500px;
+	min-height: 500px;
 	opacity: 75%;
 	background-image: url("/img/background.png");
 	background-size: cover;
@@ -539,17 +539,17 @@ footer{
 	background-position: bottom left;
 	border-radius: 30px;
 	overflow: hidden;
+	display: flex;
+	justify-content: end;
+	padding-top: 90px;
 }
 
 .image_container {
-	position: absolute;
-	top: 100px;
-	right: 0;
-	left: 50%;
-	bottom: 0;
+	max-width: 50%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	align-items: center;
 	padding-right: 15px;
 	font-size: 16pt;
 }
@@ -560,6 +560,21 @@ footer{
 	margin: 0 auto;
 }
 
+.image_container a{
+	background-color: lightcyan;
+	color: black;
+	width: fit-content;
+	padding: 5px 5px;
+	border-radius: 8px;
+	transition-duration: 0.5s;
+}
+
+.image_container a:hover{
+	background-color: darkcyan;
+	color: black;
+	transition-duration: 0.5s;
+}
+
 .home_meny-container{
 	margin-top: 0;
 	background-color: green;
@@ -567,7 +582,7 @@ footer{
 
 .home_meny_container{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin-top: 15px;
 }
 
@@ -575,7 +590,7 @@ footer{
 	background-image: url("/img/pizza.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
+	width: 50%;
 	background-position: right;
 	height: 500px;
 	display: flex;
@@ -595,7 +610,7 @@ footer{
 	background-image: url("/img/vegetarisk\ pizza.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
+	width: 50%;
 	display: flex;
 	align-items: center;
 }
