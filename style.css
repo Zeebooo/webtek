@@ -689,10 +689,22 @@ footer{
 	box-sizing: border-box;
 }
 
+.small_pictures_container img{
+	width: 375px;
+	height: auto;
+	border-radius: 10px;
+}
+
 .big_pictures_container{
 	display: flex;
 	width: 100%;	
 	box-sizing: border-box;
+}
+
+.big_pictures_container img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
 }
 
 #one {
