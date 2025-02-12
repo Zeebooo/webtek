@@ -546,7 +546,7 @@ footer{
 	position: relative;
 	min-height: 500px;
 	opacity: 75%;
-	background-image: url("/img/background.png");
+	background-image: url("img/background.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom left;
@@ -600,7 +600,7 @@ footer{
 }
 
 .pizza_container{
-	background-image: url("/img/pizza.png");
+	background-image: url("img/pizza.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50%;
@@ -620,7 +620,7 @@ footer{
 }
 
 .vegetarisk_container{
-	background-image: url("/img/vegetarisk\ pizza.png");
+	background-image: url("img/vegetarisk\ pizza.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 50%;
