@@ -34,6 +34,18 @@ input::placeholder{
 	position: absolute;
 }
 
+table {
+	background-color: black;
+}
+
+#tableone{
+	background-color: grey;
+}
+
+#tabletwo{
+	background-color: lightgrey;
+}
+
 .baloo{
 	font-family: 'Baloo', sans-serif;
 }
