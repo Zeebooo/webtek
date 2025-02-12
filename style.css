@@ -560,19 +560,19 @@ footer{
 	margin: 0 auto;
 }
 
-.image_container a{
+.Button{
 	background-color: lightcyan;
-	color: black;
+	color: black !important;
 	width: fit-content;
 	padding: 5px 5px;
 	border-radius: 8px;
 	transition-duration: 0.5s;
 }
 
-.image_container a:hover{
+.Button:hover{
 	background-color: darkcyan;
-	color: black;
 	transition-duration: 0.5s;
+	color: black;
 }
 
 .home_meny-container{
@@ -613,4 +613,16 @@ footer{
 	width: 50%;
 	display: flex;
 	align-items: center;
+}
+
+.recensioner_container {
+	background: linear-gradient(to top, #999999, #FFFFFF);
+	display: flex;
+	flex-direction: column;
+	min-height: 135px;
+}
+
+.recensioner_textbox{
+	margin: 0 auto;
+	text-align: center;
 }
