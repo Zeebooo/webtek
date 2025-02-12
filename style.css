@@ -595,11 +595,11 @@ footer{
 	height: 500px;
 	display: flex;
 	align-items: center;
-
 }
 
 .pizza_text_container{
 	margin: 0 auto;
+	border-radius: 10px;
 	background-color: #484f61af;
 	width: 75%;
 	height: auto;
