@@ -74,6 +74,20 @@ input::placeholder{
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+
+/* PRINT RELATED CODE */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+	nav, footer, .text_size_container{
+		display: none;
+	}
+}
+
+
 /* NAV-BAR RELATED CODE */
 
 nav{
@@ -93,7 +107,7 @@ nav{
 .navtext{
 	padding-right: 3vw;
 	display: flex;
-	gap: 10px;
+	gap: 20px;
 }
 
 .text_size_container{
@@ -562,16 +576,17 @@ footer{
 .Button{
 	background-color: lightcyan;
 	color: black !important;
-	width: fit-content;
 	padding: 5px 5px;
 	border-radius: 8px;
-	transition-duration: 0.5s;
+	transition: transform 0.2s ease;
+	display: block;
+	width: fit-content;
 }
 
 .Button:hover{
 	background-color: darkcyan;
-	transition-duration: 0.5s;
 	color: black;
+	transform: scale(1.1);
 }
 
 .home_meny-container{
@@ -617,12 +632,15 @@ footer{
 	background: linear-gradient(to top, #999999, #FFFFFF);
 	display: flex;
 	flex-direction: column;
-	min-height: 135px;
+	padding-bottom: 15px;
 }
 
 .recensioner_textbox{
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
+	align-items: center;
 }
 
 .bildgalleri_title_container{
@@ -687,4 +705,44 @@ footer{
 	width: 100%;
 	height: auto;
 	border-radius: 10px;
+}
+
+.table_link_container{
+	margin: 100px auto;
+	width: 40%;
+}
+
+.table_link_textbox {
+	width: 100%;
+	padding: 7px 7px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	transition: transform 0.2s ease;
+}
+
+.table_link_textbox:hover{
+	transform: scale(1.1);
+}
+
+
+/* TABLE PAGE RELATED CODE */
+
+.table_background_container{
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	height: 600px;
+}
+
+.table_container{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.table_container table{
+	width: 750px;
+	height: auto;
 }
