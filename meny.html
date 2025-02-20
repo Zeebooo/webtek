@@ -11,6 +11,7 @@
 	<meta name="description" content="Gammlia pizzerias meny">
 	<meta name="keywords" content="Gammlia pizzeria meny">
 	<script src="script.js" defer></script>
+	<script src="pizzamaker.js" defer></script>
 </head>
 
 <body>
@@ -32,20 +33,39 @@
 		</div>
 
 		<div class="text_size_container baloo">
-			<p>Textstorlek</p>
-
+			Textstorlek
 			<div class="button_container">
-				<button title="kommer fungera sen med javascript"> + </button>
-				<button title="kommer fungera sen med javascript"> - </button>
+				<button id="plus"> + </button>
+				<button id="minus"> - </button>
 			</div>
-
 		</div>
 	</nav>
 
-	<div  id="start_meny" class="page_title_container">
+	<div id="start_meny" class="page_title_container">
 		<img src="img/meny/meny_titel.png" height="100" alt="title of the page">
-
+		<div class="random_pizza_container box_shadow">
+			<h2 class="baloo text_shadow yellow">Skapa din egen pizza!</h3>
+			<div class="pizza_display_container">
+				<div class="ingrediant_container yellow">
+					<h3 class="baloo text_shadow">Protein</h5>
+						<p class="baloo2 text_shadow" id="protein_text">Inget valt</p>
+						<div class="Button baloo" id="random_protein">Slumpa</div>
+				</div>
+				<div class="ingrediant_container yellow">
+					<h3 class="baloo text_shadow">Grönsaker</h5>
+						<p class="baloo2 text_shadow" id="vegetable_text">Inget valt</p>
+						<div class="Button baloo" id="random_vegetable">Slumpa</div>
+				</div>
+				<div class="ingrediant_container yellow">
+					<h3 class="baloo text_shadow">Sås</h5>
+						<p class="baloo2 text_shadow" id="sauce_text">Inget valt</p>
+						<div class="Button baloo" id="random_sauce">Slumpa</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+
 
 	<div class="meny_container">
 		<div class="meny_title_container red_fade box_shadow">
@@ -330,9 +350,9 @@
 			<div class="footer_textbox baloo2">
 				<h3 class="baloo yellow"><strong>ÖPPETTIDER</strong></h3>
 				<ul class="white">
-					<li data-day="1,2,3,4">Mån - Tors &nbsp; &nbsp; &nbsp;10:30-20:00  <span class="arrow"><h5>&#8592;</h5></span>&nbsp;</li>
-					<li data-day="5"> Fre &nbsp; &nbsp; &nbsp; 10:00 - 20:00 <span class="arrow"><h5>&#8592;</h5></span>&nbsp;</li>
-					<li data-day="6,0"> Lör - Sön &nbsp; &nbsp; &nbsp; 12:00 - 20:00 <span class="arrow"><h5>&#8592;</h5></span>&nbsp; </li>
+					<li data-day="1,2,3,4">Mån - Tors &nbsp; &nbsp; &nbsp;10:30-20:00  <span class="red_dot"></span>&nbsp;</li>
+					<li data-day="5"> Fre &nbsp; &nbsp; &nbsp; 10:00 - 20:00 <span class="red_dot"> </span>&nbsp;</li>
+					<li data-day="6,0"> Lör - Sön &nbsp; &nbsp; &nbsp; 12:00 - 20:00 <span class="red_dot"> </span>&nbsp; </li>
 				</ul>
 			</div>
 

@@ -150,6 +150,7 @@ nav{
 	background-color: #D9D9D9;
 	border-width: 0 0 0 0.1vw;
 	height: auto;
+	cursor: pointer;
 }
 
 /* FOOTER RELATED CODE */
@@ -198,15 +199,13 @@ footer{
 	color: #F2B202;
 }
 
-.arrow{
-  display: none; 
+.red_dot{
+  display: none;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
   margin-left: 10px;
-  justify-content: center;
-}
-
-.arrow h5{
-	font-size: 14pt;
-	margin: 0;
 }
 
 /* MENY RELATED CODE */
@@ -214,6 +213,7 @@ footer{
 .page_title_container{
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	margin: 125px 0 20px 0;
 }
 
@@ -286,15 +286,22 @@ footer{
     border-radius: 20px;
 }
 
-.random_pizza_container {
-	display: flex;
-	flex-direction: column;
+.random_pizza_container{
+	margin: 75px auto;
 	background-color: #484F61;
-	width: 50%;
-	margin: 30px auto;
-	align-items: center;
+	text-align: center;
+	padding: 20px 20px;
+	border-radius: 15px;
 }
 
+.pizza_display_container{
+	display: flex;
+	gap: 50px;
+}
+
+.ingrediant_container {
+
+}
 
 /* BILDGALLERI RELATED CODE */
 
@@ -609,15 +616,22 @@ footer{
 	color: black !important;
 	padding: 5px 5px;
 	border-radius: 8px;
-	transition: transform 0.2s ease;
+	transition: all 0.2s ease;
 	display: block;
 	width: fit-content;
+	margin: 0 auto;
+	cursor: pointer;
 }
 
 .Button:hover{
 	background-color: darkcyan;
 	color: black;
 	transform: scale(1.1);
+}
+
+.Button_shrink {
+	font-size: 12pt;
+	padding: 3px 3px;
 }
 
 .home_meny-container{
@@ -789,8 +803,4 @@ footer{
 .table_container table{
 	width: 750px;
 	height: auto;
-}
-
-.js_button_container{
-	margin: 25px auto;
 }
