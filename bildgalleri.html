@@ -10,6 +10,7 @@
 	<meta name="description" content="Gammlia pizzerias bildgalleri">
 	<meta name="keywords" content="Gammlia pizzeria bildgalleri">
 	<script src="script.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 			</div>
 
 			<div class="navtext">
-				<a href="index.html"  ><strong> HEM</strong> </a>
+				<a href="index.html"><strong> HEM</strong> </a>
 				<a href="meny.html"><strong>MENY</strong> </a>
 				<a href="lunch.html"><strong> LUNCH </strong> </a>
 				<a href="avhämtning.html"><strong> AVHÄMTNING </strong> </a>
@@ -35,37 +36,36 @@
 			<div class="button_container">
 				<button id="plus"> + </button>
 				<button id="minus"> - </button>
+				<button id="reset">Återställ</button>
 			</div>
 		</div>
 	</nav>
 
-    <div class="page_title_container">
+	<div class="page_title_container">
 		<img src="img/bildgalleri/bildgalleri.png" alt="page title">
 	</div>
 
-    <div class="pictures_container_background">
-        <div class="pictures_container">
-            <img src="img/bildgalleri/bild1.png" alt="pizza">
-        </div>
-        <div class="pictures_container">
-            <img src="img/bildgalleri/bild2.png" alt="pizza">
-        </div>
-        <div class="pictures_container">
-            <img src="img/bildgalleri/bild3.png" alt="pizza">
-        </div>
-        <div class="pictures_container">
-            <img src="img/bildgalleri/bild4.png" alt="pizza">
-        </div>
-        <div class="pictures_container">
-            <img src="img/bildgalleri/bild5.png" alt="pizza">
-        </div>
-        <div class="pictures_container">
-            <img src="img/bildgalleri/bild6.png" alt="pizza">
-        </div>
-
-
-
-    </div>
+	<div class="pictures_container_background">
+		<div class="pictures_container">
+			<img src="img/bildgalleri/bild1.png" alt="pizza">
+		</div>
+		<div class="pictures_container">
+			<img src="img/bildgalleri/bild2.png" alt="pizza">
+		</div>
+		<div class="pictures_container">
+			<img src="img/bildgalleri/bild3.png" alt="pizza">
+		</div>
+		<div class="pictures_container">
+			<img src="img/bildgalleri/bild4.png" alt="pizza">
+		</div>
+		<div class="pictures_container">
+			<img src="img/bildgalleri/bild5.png" alt="pizza">
+		</div>
+		<div class="pictures_container">
+			<img src="img/bildgalleri/bild6.png" alt="pizza">
+		</div>
+	</div>
+	<div id="scroll_top" class="baloo review_gray box_shadow">Skrolla längst upp</div>
 
 	<footer>
 		<div class="logo_footer">
@@ -75,9 +75,11 @@
 			<div class="footer_textbox baloo2">
 				<h3 class="baloo yellow"><strong>ÖPPETTIDER</strong></h3>
 				<ul class="white">
-					<li data-day="1,2,3,4">Mån - Tors &nbsp; &nbsp; &nbsp;10:30-20:00  <span class="red_dot"></span>&nbsp;</li>
+					<li data-day="1,2,3,4">Mån - Tors &nbsp; &nbsp; &nbsp;10:30-20:00 <span
+							class="red_dot"></span>&nbsp;</li>
 					<li data-day="5"> Fre &nbsp; &nbsp; &nbsp; 10:00 - 20:00 <span class="red_dot"> </span>&nbsp;</li>
-					<li data-day="6,0"> Lör - Sön &nbsp; &nbsp; &nbsp; 12:00 - 20:00 <span class="red_dot"> </span>&nbsp; </li>
+					<li data-day="6,0"> Lör - Sön &nbsp; &nbsp; &nbsp; 12:00 - 20:00 <span class="red_dot">
+						</span>&nbsp; </li>
 				</ul>
 			</div>
 

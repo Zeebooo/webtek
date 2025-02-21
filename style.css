@@ -86,6 +86,15 @@ table {
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+#scroll_top {
+	display: none;
+	position: fixed;
+	padding: 10px;
+	border-radius: 5px;
+	bottom: 20px;
+	left: 15px;
+}
+
 
 /* PRINT RELATED CODE */
 @media print {

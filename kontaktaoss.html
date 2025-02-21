@@ -10,6 +10,7 @@
 	<meta name="description" content="Gammlia pizzerias kontakta oss">
 	<meta name="keywords" content="Gammlia pizzeria kontakta oss">
 	<script src="script.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -35,6 +36,7 @@
 			<div class="button_container">
 				<button id="plus"> + </button>
 				<button id="minus"> - </button>
+				<button id="reset">Återställ</button>
 			</div>
 		</div>
 	</nav>
@@ -51,34 +53,35 @@
 
 		<div class="form_section_container">
 			<h5>NAMN ELLER FÖRETAG</h5>
-				<input class="box_shadow" placeholder="Ditt namn..." type="text">
+				<input class="box_shadow" id="name" placeholder="Ditt namn..." type="text">
 		</div>
 		<div class="form_section_container">
 			<h5>MEJLADRESS</h5>
-				<input class="box_shadow" placeholder="Din mejladress..." type="email">
+				<input class="box_shadow" id="mail" placeholder="Din mejladress..." type="email">
 		</div>
 		<div class="form_section_container">
 			<h5>TELEFONNUMMER</h5>
-				<input class="box_shadow" placeholder="Ditt telefonnummer..." type="text">
+				<input class="box_shadow" id="number" placeholder="Ditt telefonnummer..." type="text">
 		</div>
 		<div class="form_section_container">
 			<h5>ÄMNE</h5>
-				<input class="box_shadow" placeholder="Ämne..." type="text">
+				<input class="box_shadow" id="subject" placeholder="Ämne..." type="text">
 		</div>
 		<div class="form_section_container">
 			<h5>MEDDELANDE</h5>
-				<textarea class="box_shadow baloo2" placeholder="Skriv ditt meddelande"></textarea>
+				<textarea class="box_shadow baloo2" id="message" placeholder="Skriv ditt meddelande"></textarea>
 		</div>
 
 		<div class="checkbox_container">
-			<input type="checkbox">
+			<input type="checkbox" id="confirm">
 			<p class="baloo2 white text_shadow">Jag godkänner att Gammlia pizzeria använder min information för att kontakta mig och jag godkänner deras policy.</p>
 		</div>
 
 		<div class="submit_form_container">
-			<input type="submit" value="Skicka">
+			<input type="submit" id="submit_button" value="Skicka">
 		</div>
 	</div>
+	<div id="scroll_top" class="baloo review_gray box_shadow">Skrolla längst upp</div>
 
 	<footer>
 		<div class="logo_footer">
