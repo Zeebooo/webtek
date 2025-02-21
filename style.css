@@ -10,6 +10,7 @@ body{
 	background-attachment: fixed;
 }
 
+
 a, a:visited, a:active {
     text-decoration: none;
 	color: #F2B202;
@@ -17,7 +18,6 @@ a, a:visited, a:active {
 
 a:hover{
 	text-decoration: none;
-	color: #BF8E06;
 }
 
 li{

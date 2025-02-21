@@ -1,3 +1,4 @@
+
 const protein = ["Skinka", "Kyckling", "Kebabkött", "Tonfisk", "Räkor", "Salami", "Bacon"];
 const vegetables = ["Lök", "Oliver", "Fefferoni", "Sallad"];
 const sauce = ["Vitlökssås", "Kebabsås", "Bearnaisesås", "Starksås", "Hamburgerdressing", "Curry"];
@@ -13,8 +14,6 @@ buttons.forEach(button => {
 		}, 50);
 	});
 });
-
-
 
 function randomizeIngrediant(array, element) {
 	const chosenIndex = Math.floor(Math.random() * array.length);
