@@ -1,6 +1,19 @@
 document.addEventListener('DOMContentLoaded', function(){
+
+	/* FOOTER ÖPPETTIDER */
+	
 	const today = new Date().getDay();
 	const open_time = document.querySelectorAll("li[data-day]");
+	
+	open_time.forEach(item => {
+		const days = item.dataset.day.split(",");
+		if (days.includes(today.toString())){
+			item.querySelector(".red_dot").style.display = "inline-block";
+		}
+	});
+
+	/* TEXTSTORLEKS KNAPPEN */
+
 	const text_sizes = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, input, textarea");
 	let originalSizes = {};  
 	
@@ -16,13 +29,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 	
-	
-	open_time.forEach(item => {
-		const days = item.dataset.day.split(",");
-		if (days.includes(today.toString())){
-			item.querySelector(".red_dot").style.display = "inline-block";
-		}
-	});
 
 	document.getElementById("plus").addEventListener("click", function(){
 		let elements = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, input, textarea");
@@ -44,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 
-
+	/* jQuery kod */
 
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 100) {
